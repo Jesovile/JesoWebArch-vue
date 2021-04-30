@@ -12,17 +12,17 @@
 </template>
 
 <script>
-import CatalogSectionRow from "../components/CatalogSectionRow";
+import CatalogSectionRow from "../commons/CatalogSectionRow";
 import FavoritesSectionHeader from "./components/FavoritesSectionHeader";
 import FavoriteItem from "./components/FavoriteItem/FavoriteItem";
 
 /**
  * FAVORITES SECTION COMPONENT
  * Non-default container for favorites items.
- * FR: open\close section entry. Provide data for child components in this scope
- * VR: Render favorite item components. Render header and items layout (!ATTENTION it use common-level CatalogSectionRow as a part of layout).
+ * FR: open\close section entry. Provide data for child commons in this scope
+ * VR: Render favorite item commons. Render header and items layout (!ATTENTION it use common-level CatalogSectionRow as a part of layout).
  * notes:
- * It seems like a module (has a child components, provide data) but is isn't.
+ * It seems like a module (has a child commons, provide data) but is isn't.
  * It's NOT singleton, cause the source of data is props. It means, that it depends on parent component (composition model "part-of").
  * If we want to make it like a module, the data source must be application state (vuex). With data from application state it is SINGLETON
  * */

@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import CatalogSectionRow from "./components/CatalogSectionRow";
+import CatalogSectionRow from "./commons/CatalogSectionRow";
 import ItemCard from "../../../appCommons/ItemCard";
 import ButtonRounded from "../../../appCommons/buttons/ButtonRounded";
 

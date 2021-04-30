@@ -9,7 +9,7 @@
 /**
  * CATALOG SECTION ROW VIEW
  * Row view for catalog items ("Wrapper" composition pattern).
- * Common component for all section components (part of)
+ * Common component for all section commons (part of)
  * FR: -
  * VR: row layout view for section items. First implementation of section inner view and items visual composition
  * */
