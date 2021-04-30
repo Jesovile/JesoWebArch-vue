@@ -9,7 +9,7 @@ This project is an example of web-application architecture.
 
 It's MODULE BASED and FRACTAL.
 
-#MODULE 
+# MODULE 
 - business-domain implementation. 
   Singleton.
   It uses application state (vuex) or server state (API requests) as a data source.
@@ -23,13 +23,13 @@ It's MODULE BASED and FRACTAL.
   If you're in doubt about at least one of those conditions, your entity IS NOT A MODULE. Design it as a COMPONENT, please.
 
 
-#COMPONENT 
+# COMPONENT 
 - a part of a module (or application level common components). 
   It can be used in many places and is reusable on its own level and deeper.
   It uses props or inject as a data source.
 
 
-#FRACTAL
+# FRACTAL
 Every entity (MODULE or COMPONENT) on every level has the same structure:
 
 ````
@@ -46,13 +46,13 @@ Every entity CONSIST of parts from the same level "components" folder and this o
 They CANNOT use deeper or higher entities. They CANNOT use entities on the same level (except "components" and "utilities" folder).
 
 
-#GLOBAL (application level) entities are:
+# GLOBAL (application level) entities are:
 - appComponents (common application components library, they can be uses in every part of application in every place)
 - application store (vuex in this example, encapsulated in main.js in this example)
 - API (server state representation, is absent in this example)
 
 
-#MAIN PRINCIPLES are:
+# MAIN PRINCIPLES are:
 - Single Responsibility Principal
 - Plug-In (you need make changes only in one place to replace, add and remove entity on every level in every place)
 
